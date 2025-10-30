@@ -1,0 +1,19 @@
+.loader-container {
+  display: inline-block;
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  color: #e5e7eb; /* similar to text-gray-200 */
+  animation: spin 1s linear infinite;
+  fill: #6469ff;
+}
+
+/* Animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
