@@ -10,7 +10,7 @@ return (
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
-const [searchText,setSearchText] = useState('uhygfd');
+const [searchText,setSearchText] = useState('');
   useEffect(() => {
     setLoading(true);
 
@@ -52,11 +52,11 @@ const [searchText,setSearchText] = useState('uhygfd');
             {searchText ? (
               <RenderCards 
               data={[]}
-              title="No posts found"/>
+              title="No search results found"/>
             ) : (
               <RenderCards 
               data={[]}
-              title="No search results found"/>
+              title="No posts found"/>
             )}
           </div>
 
